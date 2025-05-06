@@ -1,0 +1,253 @@
+body {
+    font-family: 'Noto Sans Bengali', sans-serif !important;
+}
+
+
+/*----common css color----*/
+:root {
+    --dark-red: #9c2a2e;
+    --light-grey: #F0F5FA;
+    --dark-blue: #002b5c;
+}
+
+/*----common css color----*/
+p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+/*----header section start ----*/
+
+/*---- top header ---- */
+.top-header .topbar {
+    background-color: var(--dark-red);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 0.875rem;
+    padding: 0.25rem 1rem;
+}
+.top-header .login-btn {
+    color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease-in-out ;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+.top-header .login-btn:hover {
+    background-color: var(--dark-blue);
+    color: white;
+    text-decoration: none;
+}
+.top-header .topbar a {
+    color: white;
+    margin-right: 0.75rem; /* space-x-3 */
+    text-decoration: none;
+}
+.top-header .topbar a:hover {
+    color: #d1d5db; /* gray-300 */
+}
+
+
+
+/*---- middle header ---- */
+
+/*----header section end ----*/
+
+.main-menu .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 0.875rem;
+    font-family: Arial, sans-serif;
+}
+.main-menu .navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-toggle:hover {
+    color: white !important;
+    background-color: transparent !important;
+    border-color: white !important;
+}
+.main-menu .navbar {
+    background-color: var(--dark-blue) !important;
+}
+.main-menu .dropdown-menu {
+    background-color: var(--dark-blue) !important;
+    border: none;
+}
+.main-menu .dropdown-menu .dropdown-item {
+    color: white;
+    font-size: 0.875rem;
+    font-family: Arial, sans-serif;
+}
+.main-menu .dropdown-menu .dropdown-item:hover {
+    background-color: #a30000;
+    color: white;
+}
+
+
+/*---- hero section ---- */
+
+
+.hero swiper-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 4.8;
+}
+.hero swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.hero swiper-container::part(button-prev),
+.hero swiper-container::part(button-next) {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.hero swiper-container::part(button-prev):hover,
+.hero swiper-container::part(button-next):hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .hero swiper-container {
+        aspect-ratio: 16 / 4.8;
+    }
+    .hero swiper-container::part(button-prev),
+    .hero swiper-container::part(button-next) {
+        width: 30px;
+        height: 30px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero swiper-container {
+        aspect-ratio: 16 / 4.8;
+    }
+    .hero swiper-container::part(button-prev),
+    .hero swiper-container::part(button-next) {
+        width: 24px;
+        height: 24px;
+        padding: 4px;
+    }
+}
+
+
+
+/*---- service1 ---- */
+.service-card {
+    box-shadow: 0 0 10px #a0e9ff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #38bdf8;
+}
+.service-btn {
+    font-size: 0.75rem;
+    color: #fbbf24;
+    border-color: #fbbf24;
+}
+.service-btn:hover {
+    background-color: #fbbf24;
+    color: #fff;
+}
+
+
+
+
+/* ---- blog section ---- */
+.blog .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+
+/* ---- service ---- */
+.service .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.service .card .badge {
+    font-size: 0.75rem;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(5px);
+}
+
+
+/*---- contact ----*/
+.contact{
+    background-color:  var(--light-grey) !important;
+}
+
+.contact img{
+    width:  100% !important;
+    height:  400px !important;
+}
+
+
+/* ---- gallery ---- */
+
+
+/*---- location section ----*/
+.map-container {
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden !important;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hospital-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+/*---- footer section start ---- */
+.footer {
+    background-color: var(--dark-red);
+    color: white;
+}
+.footer p, .footer li {
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+.footer .section-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+/*---- media query 768 px ----*/
