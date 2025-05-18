@@ -20,178 +20,170 @@
     <!-- ---- top header ---- -->
     <div class="top-header">
         <div class="topbar">
-            <div class="container d-flex justify-content-between align-items-center ">
-                <div class="d-flex align-items-center">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     <span>05 May 2025</span>
                 </div>
-                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="login-btn me-0">Login</a>
             </div>
         </div>
     </div>
 
     <!-- ---- middle header ---- -->
     <div class="middle-menu">
-        <div class="container py-3">
-            <div class="row align-items-center g-3">
-
-                <!-- Logo -->
-                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center">
-                    <img src="https://storage.googleapis.com/a1aa/image/c94ab271-fe9e-4ca2-12bf-83a18ced1f91.jpg" alt="Al-Manar Hospital Logo" class="img-fluid" style="max-width: 80px;">
-                    <div class="ms-2">
-                        <h6 class="mb-0 text-success">আল-মানার হাসপাতাল লিঃ</h6>
-                        <h6 class="mb-0 text-danger fw-bold text-uppercase">AL-MANAR HOSPITAL LTD.</h6>
-                    </div>
+        <div class="container d-flex justify-content-between align-items-center header-container py-2">
+            <div class="d-flex align-items-center gap-1">
+                <img src="https://storage.googleapis.com/a1aa/image/c94ab271-fe9e-4ca2-12bf-83a18ced1f91.jpg"
+                    alt="Al-Manar Hospital Logo" class="img-fluid" style="max-width: 60px;">
+                <div class="">
+                    <h6 class="mb-0 text-success">আল-মানার হাসপাতাল লিঃ</h6>
+                    <h6 class="mb-0 text-danger fw-bold text-uppercase">AL-MANAR HOSPITAL LTD.</h6>
                 </div>
-
-                <!-- Search -->
-                <div class="col-12 col-md-3 d-none  d-lg-block">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search ..." aria-label="Search">
-                        <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
-                    </form>
+            </div>
+            <div class="d-none d-lg-block">
+                <form class="d-flex justify-content-center">
+                    <div class="input-group" style="max-width: 400px;">
+                        <input type="text" class="form-control" placeholder="Search..." aria-label="Search">
+                        <button type="submit" class="btn form-btn text-white">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex gap-4 phone-group">
+                <div class="d-flex flex-column align-items-start">
+                    <span class="phone-label">Al-Manar Hospital</span>
+                    <a href="tel:01716229959" class="phone-button" aria-label="Call for Serial 01716229959">
+                        <i class="fas fa-phone-alt phone-icon"></i>
+                        <span>01550020871</span>
+                    </a>
                 </div>
-
-                <!-- Contact Info -->
-                <div class="col-12 col-md-6 d-flex flex-wrap justify-content-md-end gap-2">
-                    <div class="d-none d-sm-block text-center border border-primary rounded px-3 py-2">
-                        <small class="d-block fw-semibold">PABX</small>
-                        <small><i class="fas fa-phone-alt me-1 text-primary"></i>02 58150207, 02 58150197</small>
-                    </div>
-                    <div class="text-center border border-primary rounded px-3 py-2">
-                        <small class="d-block fw-semibold">Al-Manar Hospital</small>
-                        <small><i class="fas fa-phone-alt me-1 text-primary"></i>01550020871</small>
-                    </div>
-                    <div class="text-center border border-primary rounded px-3 py-2">
-                        <small class="d-block fw-semibold">Specialized Hospital</small>
-                        <small><i class="fas fa-phone-alt me-1 text-primary"></i>01875557666</small>
-                    </div>
+                <div class="d-flex flex-column align-items-start">
+                    <span class="phone-label">Specialized Hospital</span>
+                    <a href="tel:01706304222" class="phone-button" aria-label="Call for Query 01706304222">
+                        <i class="fas fa-phone-alt phone-icon"></i>
+                        <span>01875557666</span>
+                    </a>
                 </div>
-
             </div>
         </div>
     </div>
 
     <!-- ---- main menu ---- -->
-    <div class="main-menu" id="mainMenu">
-        <nav class="navbar navbar-expand-xl">
-            <div class="container px-3">
-                <button
-                        class="navbar-toggler border-white outline-0"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    <div class="main-menu " id="mainMenu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="d-block d-xl-none border border-white col-8 col-sm-4 rounded bg-white">
-                    <div class="d-flex align-items-center">
-                        <input
-                                type="text"
-                                placeholder="Search ..."
-                                aria-label="Search ..."
-                                class="form-control bg-transparent outline-0 border-0"
-                        >
-                        <div class="col-2 text-center bg-transparent">
-                            <i class="fas fa-search"></i>
+                <div class="d-block d-lg-none">
+                    <form class="d-flex justify-content-center">
+                        <div class="input-group input-group-responsive">
+                            <input type="text" class="form-control" placeholder="Search..." aria-label="Search">
+                            <button type="submit" class="btn form-btn text-white">
+                                <i class="fas fa-search"></i>
+                            </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
-                <div class="collapse mt-5 mt-xl-0 navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto align-items-center ">
-                        <li class="nav-item my-2 my-xl-0 ">
-                            <a href="" class="nav-link border border-white rounded ms-1 px-3 py-2">
-                                <!-- <i class="fas fa-home me-1"></i> -->
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item item my-2 my-xl-0">
-                            <a class="nav-link border border-white rounded mx-1 px-3 py-2" href="#">Doctors</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link border border-white rounded mx-1 px-3 py-2" href="#">Appointment</a>
+                            <a class="nav-link active" aria-current="page" href="#">Doctors</a>
                         </li>
-
-                        <li class="nav-item dropdown mx-1 my-2 my-xl-0">
-                            <a
-                                    class="nav-link dropdown-toggle border border-white rounded px-3 py-2"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                            >
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Update
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Update 1</a></li>
-                                <li><a class="dropdown-item" href="#">Update 2</a></li>
-                                <li><a class="dropdown-item" href="#">Update 3</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">update 1</a></li>
+                                <li><a class="dropdown-item" href="#">update 2</a></li>
+                                <li><a class="dropdown-item" href="#">update 3</a></li>
                             </ul>
                         </li>
-
-                        <li class="nav-item dropdown mx-1 my-2 my-xl-0">
-                            <a
-                                    class="nav-link dropdown-toggle border border-white rounded px-3 py-2"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                            >
+                        <!-- service drop -->
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Our Service
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Service 1</a></li>
-                                <li><a class="dropdown-item" href="#">Service 2</a></li>
-                                <li><a class="dropdown-item" href="#">Service 3</a></li>
+                            <ul class="dropdown-menu dropdown-full bg-transparent border-0 m-0 rounded-0" aria-labelledby="navbarDropdown">
+                                <div class="">
+                                    <div class="container">
+                                        <div class="row dropdown-bg m-0 p-3">
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <a class="dropdown-item text-white" href="#">Service 1</a>
+                                                <a class="dropdown-item text-white" href="#">Service 2</a>
+                                                <a class="dropdown-item text-white" href="#">Service 3</a>
+                                                <a class="dropdown-item text-white" href="#">Service 4</a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <a class="dropdown-item text-white" href="#">Service 5</a>
+                                                <a class="dropdown-item text-white" href="#">Service 6</a>
+                                                <a class="dropdown-item text-white" href="#">Service 7</a>
+                                                <a class="dropdown-item text-white" href="#">Service 8</a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <a class="dropdown-item text-white" href="#">Service 9</a>
+                                                <a class="dropdown-item text-white" href="#">Service 10</a>
+                                                <a class="dropdown-item text-white" href="#">Service 11</a>
+                                                <a class="dropdown-item text-white" href="#">Service 12</a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-12">
+                                                <a class="dropdown-item text-white" href="#">Service 13</a>
+                                                <a class="dropdown-item text-white" href="#">Service 14</a>
+                                                <a class="dropdown-item text-white" href="#">Service 15</a>
+                                                <a class="dropdown-item text-white" href="#">Service 16</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown mx-1 my-2 my-xl-0">
-                            <a
-                                    class="nav-link dropdown-toggle border border-white rounded px-3 py-2"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                            >
-                                Subsidiaries
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Subsidiariies
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Subsidiary 1</a></li>
-                                <li><a class="dropdown-item" href="#">Subsidiary 2</a></li>
-                                <li><a class="dropdown-item" href="#">Subsidiary 3</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Subsidiariies 1</a></li>
+                                <li><a class="dropdown-item" href="#">Subsidiariies 2</a></li>
+                                <li><a class="dropdown-item" href="#">Subsidiariies 3</a></li>
                             </ul>
                         </li>
-
-                        <li class="nav-item my-2 my-xl-0">
-                            <a class="nav-link border border-white rounded mx-1 px-3 py-2" href="#">Service Charge</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service Charge</a>
                         </li>
-                        <li class="nav-item my-2 my-xl-0">
-                            <a class="nav-link border border-white rounded mx-1 px-3 py-2" href="#">Gallery</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
                         </li>
-                        <li class="nav-item my-2 my-xl-0">
-                            <a class="nav-link border border-white rounded mx-1 px-3 py-2" href="#">Careers</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
                         </li>
-
-                        <li class="nav-item dropdown mx-1 my-2 my-xl-0">
-                            <a
-                                    class="nav-link dropdown-toggle border border-white rounded px-3 py-2"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                            >
-                                About Us
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About us
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">About 1</a></li>
-                                <li><a class="dropdown-item" href="#">About 2</a></li>
-                                <li><a class="dropdown-item" href="#">About 3</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">about 1</a></li>
+                                <li><a class="dropdown-item" href="#">about 2</a></li>
+                                <li><a class="dropdown-item" href="#">about 3</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -200,8 +192,47 @@
         </nav>
     </div>
 
+    <!-- marque area -->
+    <div class="marque-area">
+        <div class="container">
+            <div class=" d-flex align-items-center gap-3 rounded">
+                <div class="py-2 px-4 rounded d-flex align-items-center">
+                    <span class="blinking-dot"></span>
+                    <strong>News</strong>
+                </div>
+                <div class="flex-grow-1 ">
+                    <marquee behavior="scroll" direction="" class="d-flex align-items-center gap-4 marque_div">
+                        <p class="nav-link d-inline-block" href="">Welcome to Al-Manar Hospital Ltd. & Al-Manar Specialized Hospital</p>
+                        <p class="nav-link d-inline-block" href="">সর্বোচ্চ মান সব পরীক্ষা ২৫% কম খরচে সব সময়ের জন্য </a>
+                        <p class="nav-link d-inline-block" href="">আল-মানার ডিজিটাল সার্ভিসেস স্বাস্থ্য সেবা নিয়ে এখন আপনার পাশে। মোবাইল : 01 300 200 100 </a>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
-<main>
+<main class="relative">
+
+    <div class="msg-area">
+        <div class="d-flex flex-column gap-2 ">
+            <div class="phone-container">
+                <button class="phone-button " aria-label="Call">
+                    <i class="fas fa-phone"></i>
+                    <div class="label-badge">Digital Service</div>
+                </button>
+                <span class="phone-number">01300200100</span>
+            </div>
+        
+            <button type="button" class="btn btn-teal text-center">
+                Get Online Report
+            </button>
+        
+            <button type="button" class="btn btn-orange text-center">
+                Book Appointment
+            </button>
+        </div>
+    </div>
+
     <!-- ---- hero section ---- -->
     <section class="hero">
         <swiper-container
@@ -215,64 +246,131 @@
                 speed="2500"
         >
             <swiper-slide>
-                <img class="img-fluid" src="./asset/images/slider1.png" alt="">
+                <div class="swiper_slider">
+                <img class="img-fluid w-100" src="./asset/images/slider1.png" alt="">
+                <div class="hero-overlay">
+                    <h1 class="fw-bold">Empty div 1</h1>
+                    <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a class="nav-link px-5 py-2 rounded" href="">Click Here</a>
+                </div>
+                </div>
+            </swiper-slide>
+          
+            <swiper-slide>
+                <div class="swiper_slider">
+                    <img class="img-fluid" src="./asset/images/slider2.png" alt="">
+                    <div class="hero-overlay">
+                        <h1 class=" ">
+                            Empty div 2
+                        </h1>
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="nav-link px-5 py-2 rounded" href="">Click Here</a>
+                    </div>
+                </div>
             </swiper-slide>
             <swiper-slide>
-                <img class="img-fluid" src="./asset/images/slider2.png" alt="">
+                <div class="swiper_slider">
+                    <img class="img-fluid" src="./asset/images/slider3.png" alt="">
+                    <div class="hero-overlay">
+                        <h1 class=" ">
+                            Empty div 3
+                        </h1>
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="nav-link px-5 py-2 rounded" href="">Click Here</a>
+                    </div>
+                </div>
             </swiper-slide>
             <swiper-slide>
-                <img class="img-fluid" src="./asset/images/slider3.png" alt="">
-            </swiper-slide>
-            <swiper-slide>
-                <img class="img-fluid" src="./asset/images/slider4.png" alt="">
+                <div class="swiper_slider">
+                    <img class="img-fluid" src="./asset/images/slider4.png" alt="">
+                    <div class="hero-overlay">
+                        <h1 class=" ">
+                            Empty div 4
+                        </h1>
+                        <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a class="nav-link px-5 py-2 rounded" href="">Click Here</a>
+                    </div>
+                </div>
             </swiper-slide>
         </swiper-container>
     </section>
 
     <!-- ---- hospital status  -->
-    <section class="hospital_status py-5">
-        <div class="container py-4">
-            <h2 class="bg-primary text-white text-center fw-semibold py-2">
-                Why Choose Al Manar Hospital?
-            </h2>
-            <p class="text-center text-secondary small mt-2 mb-4 mx-auto" style="max-width: 900px;">
-                Experience world-class healthcare at Al Manar, a trusted name in the community for over 28 years. Our hospital offers a wide range of specialized services delivered by expert medical professionals. With convenient locations, we provide personalized care focused on patient satisfaction. Choose Al Manar for your well-being.
-            </p>
-            <div class="row g-3">
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="bg-info rounded shadow-sm p-4 text-center">
-                        <p class="text-dark fs-4 mb-1 counter" data-count="73">0</p>
-                        <p class="text-danger fs-4 fw-semibold mb-0">CABG</p>
+    <section class="hospital_status py-5 mt-4"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <div class="container py-4"> 
+                        <h3 class="fw-semibold py-2">
+                            Why Choose Al Manar Hospital?
+                        </h3>
+                        <p class=" text-secondary small mt-2 mx-auto" style="max-width: 900px;">
+                            Experience world-class healthcare at Al Manar, a trusted name in the community for over 28 years. Our hospital
+                            offers a wide range of specialized services delivered by expert medical professionals. With convenient
+                            locations, we provide personalized care focused on patient satisfaction. Choose Al Manar for your well-being.
+                        </p>
+                        <div class="row g-3 mt-1 text-center">
+                            <div class="col-6">
+                                <div class="card bg-white border-1 rounded shadow p-4 h-100">
+                                    <div class="d-flex align-items-center flex justify-content-center">
+                                        <h1 class="text-Body fs-1 fw-bolder mb-1 counter" data-count="103">0</h1>
+                                        <h1 class="fw-bolder fs-1">+</h1>
+                                    </div>
+                                    <p class=" mb-0">specialized services delivered</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card bg-white border-1  rounded shadow p-4 h-100">
+                                    <div class="d-flex align-items-center flex justify-content-center">
+                                        <h1 class="text-Body fs-1 fw-bolder mb-1 counter" data-count="303">0</h1>
+                                        <h1 class="fw-bolder fs-1">+</h1>
+                                    </div>
+                                    <p class=" mb-0">specialized services delivered</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card bg-white border-1  rounded shadow p-4 h-100">
+                                    <div class="d-flex align-items-center flex justify-content-center">
+                                        <h1 class="text-Body fs-1 fw-bolder mb-1 counter" data-count="233">0</h1>
+                                        <h1 class="fw-bolder fs-1">+</h1>
+                                    </div>
+                                    <p class=" mb-0">specialized services delivered</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card bg-white border-1  rounded shadow p-4 h-100 ">
+                                    <div class="d-flex align-items-center flex justify-content-center">
+                                        <h1 class="text-Body fs-1 fw-bolder mb-1 counter" data-count="222">0</h1>
+                                        <h1 class="fw-bolder fs-1">+</h1>
+                                    </div>
+                                    <p class=" mb-0">specialized services delivered</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card bg-white border-1  rounded shadow p-4 h-100">
+                                    <div class="d-flex align-items-center flex justify-content-center">
+                                        <h1 class="text-Body fs-1 fw-bolder mb-1 counter" data-count="203">0</h1>
+                                        <h1 class="fw-bolder fs-1">+</h1>
+                                    </div>
+                                    <p class=" mb-0">specialized services delivered</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card bg-white border-1  rounded shadow p-4 h-100">
+                                    <div class="d-flex align-items-center flex justify-content-center">
+                                        <h1 class="text-Body fs-1 fw-bolder mb-1 counter" data-count="203">0</h1>
+                                        <h1 class="fw-bolder fs-1">+</h1>
+                                    </div>
+                                    <p class=" mb-0">specialized services </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="bg-info rounded shadow-sm p-4 text-center">
-                        <p class="text-dark fs-4 mb-1 counter" data-count="300">0</p>
-                        <p class="text-danger fs-4 fw-semibold mb-0">CAG</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="bg-info rounded shadow-sm p-4 text-center">
-                        <p class="text-dark fs-4 mb-1 counter" data-count="78">0</p>
-                        <p class="text-danger fs-4 fw-semibold mb-0">Eye</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="bg-info rounded shadow-sm p-4 text-center">
-                        <p class="text-dark fs-4 mb-1 counter" data-count="19375">0</p>
-                        <p class="text-danger fs-4 fw-semibold mb-0">Neoury Sugar</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="bg-info rounded shadow-sm p-4 text-center">
-                        <p class="text-dark fs-4 mb-1 counter" data-count="188">0</p>
-                        <p class="text-danger fs-4 fw-semibold mb-0">Orthopadic</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="bg-info rounded shadow-sm p-4 text-center">
-                        <p class="text-dark fs-4 mb-1 counter" data-count="30">0</p>
-                        <p class="text-danger fs-4 fw-semibold mb-0">PCI</p>
+                <!-- right side -->
+                <div class="col-lg-5 col-12">
+                    <div>
+                        <img class="w-100 h-100" src="./asset/images/Building 02.jpg" alt="Building 02">
                     </div>
                 </div>
             </div>
@@ -281,78 +379,189 @@
 
     <!---- ----service1 section ---- -->
     <section class="service1">
-        <div class="container py-5">
+        <div class="container py-5 mt-4">
             <div class="text-center pb-3">
-                <h2 class="h2 mb-3">Our Services</h2>
+                <h3 class="text-center fw-semibold mb-4">
+                    Our Services
+                </h3>
             </div>
             <div class="row g-4">
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4">
                     <div class="card service-card text-center p-3">
                         <img src="https://storage.googleapis.com/a1aa/image/64b4cb63-de86-4abb-59db-2ae2a47178f4.jpg" class="card-img-top" alt="Doctor" style="height:300px; object-fit:cover;">
                         <div class="card-body">
-                            <button class="btn btn-outline-warning service-btn">All Doctors</button>
+                            <button class="btn service-btn mt-3">All Doctors</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4">
                     <div class="card service-card text-center p-3">
                         <img src="https://storage.googleapis.com/a1aa/image/adad019f-14a7-4fdb-86f5-d6072b7c3b8f.jpg" class="card-img-top" alt="Health Package" style="height:300px; object-fit:cover;">
                         <div class="card-body">
-                            <button class="btn btn-outline-warning service-btn">Health Package</button>
+                            <button class="btn mt-3 service-btn">Health Package</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4">
                     <div class="card service-card text-center p-3">
                         <img src="https://storage.googleapis.com/a1aa/image/024a1ef2-36a7-42ca-61a8-2c96fcb6606e.jpg" class="card-img-top" alt="Digital Service" style="height:300px; object-fit:cover;">
                         <div class="card-body">
-                            <button class="btn btn-outline-warning service-btn">Digital Service</button>
+                            <button class="btn mt-3 service-btn">Digital Service</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4">
                     <div class="card service-card text-center p-3">
                         <img src="https://storage.googleapis.com/a1aa/image/024a1ef2-36a7-42ca-61a8-2c96fcb6606e.jpg" class="card-img-top" alt="24 Hours Service" style="height:300px; object-fit:cover;">
                         <div class="card-body">
-                            <button class="btn btn-outline-warning service-btn">24 Hours Service</button>
+                            <button class="btn mt-3 service-btn">24 Hours Service</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4">
                     <div class="card service-card text-center p-3">
                         <img src="https://storage.googleapis.com/a1aa/image/cc8b2319-fae7-4353-7d34-6bb87c6978c7.jpg" class="card-img-top" alt="Online Report" style="height:300px; object-fit:cover;">
                         <div class="card-body">
-                            <button class="btn btn-outline-warning service-btn">Online Report</button>
+                            <button class="btn mt-3 service-btn">Online Report</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4">
                     <div class="card service-card text-center p-3">
                         <img src="https://storage.googleapis.com/a1aa/image/943ad944-a136-4a2c-d2c6-f3456c00f5b2.jpg" class="card-img-top" alt="Modern Equipment" style="height:300px; object-fit:cover;">
                         <div class="card-body">
-                            <button class="btn btn-outline-warning service-btn">Modern Equipment</button>
+                            <button class="btn mt-3 service-btn">Modern Equipment</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4">
                     <div class="card service-card text-center p-3">
                         <img src="https://storage.googleapis.com/a1aa/image/cc8b2319-fae7-4353-7d34-6bb87c6978c7.jpg" class="card-img-top" alt="Online Report" style="height:300px; object-fit:cover;">
                         <div class="card-body">
-                            <button class="btn btn-outline-warning service-btn">Online Report</button>
+                            <button class="btn mt-3 service-btn">Online Report</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4">
                     <div class="card service-card text-center p-3">
                         <img src="https://storage.googleapis.com/a1aa/image/943ad944-a136-4a2c-d2c6-f3456c00f5b2.jpg" class="card-img-top" alt="Modern Equipment" style="height:300px; object-fit:cover;">
                         <div class="card-body">
-                            <button class="btn btn-outline-warning service-btn">Modern Equipment</button>
+                            <button class="btn mt-3 service-btn">Modern Equipment</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-outline read-more-button">Read More</button>
+            </div>
         </div>
     </section>
+
+
+    <!-- ---- Department section ----  -->
+    <section class="department py-5">
+    <div class="container">
+        <h3 class="department-head w-100 fw-semibold text-center mb-4  ">
+            Departments
+        </h3>
+        
+        <div class="department-content">
+            <div class="row g-4">
+        
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-1 shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="card_img">
+                                <i class="fas fa-child text-primary fs-1 mb-3"></i>
+                            </div>
+                            <h6 class="card-title fw-semibold small mb-2">Pediatric Oncology & Hematology</h6>
+                            <a href="#" class="btn depart-btn btn-sm">Pediatric Oncology & Hematology</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-1 shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="card_img">
+                                <svg fill="none" height="40" width="40" class="mb-3 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M9 12h6m-3-3v6m-6 3h12a2 2 0 002-2v-1a2 2 0 00-2-2h-1l-1-2H9l-1 2H7a2 2 0 00-2 2v1a2 2 0 002 2z"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h6 class="card-title fw-semibold small mb-2">Pediatric Gastroenterology</h6>
+                            <a href="#" class="btn depart-btn btn-sm">Pediatric Gastroenterology</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-1 shadow-sm text-center h-100" style="box-shadow: 0 0 10px 1px #a6f9d1;">
+                        <div class="card-body">
+                            <div class="card_img">
+                                <img src="https://storage.googleapis.com/a1aa/image/0a0d30eb-7b17-4467-7b04-d72ef934af61.jpg" class="rounded mb-3 "
+                                    alt="Portrait of doctor" />
+                            </div>
+                            <h6 class="card-title fw-semibold small mb-2">Orthopedic</h6>
+                            <a href="#" class="btn depart-btn btn-sm">Orthopedic</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 4 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-1 shadow-sm text-center h-100" style="box-shadow: 0 0 10px 1px #a6f9d1;">
+                        <div class="card-body">
+                            <div class="card_img">
+                                <svg fill="currentColor" height="40" width="40" class="mb-3 text-danger" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M12 21s-6-4.35-6-10a6 6 0 0112 0c0 5.65-6 10-6 10z" />
+                                    <path d="M12 3a3 3 0 00-3 3c0 2.5 3 5 3 5s3-2.5 3-5a3 3 0 00-3-3z" />
+                                </svg>
+                            </div>
+                            <h6 class="card-title fw-semibold small mb-2">Interventional Cardiology</h6>
+                            <a href="#" class="btn depart-btn btn-sm">Interventional Cardiology</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 5 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-1 shadow-sm text-center h-100" style="box-shadow: 0 0 10px 1px #a6f9d1;">
+                        <div class="card-body">
+                            <div class="card_img">
+                                <img src="https://storage.googleapis.com/a1aa/image/095b21e3-636f-4aad-d69a-245dec84be94.jpg" class="rounded mb-3 "
+                                    alt="Cardiac surgery image" />
+                            </div>
+                            <h6 class="card-title fw-semibold small mb-2 text-lowercase">cardiac surgery</h6>
+                            <a href="#" class="btn depart-btn btn-sm">cardiac surgery</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 6 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card border-1 shadow-sm text-center h-100" style="box-shadow: 0 0 10px 1px #a6f9d1;">
+                        <div class="card-body">
+                            <div class="card_img">
+                                <img src="https://storage.googleapis.com/a1aa/image/fb70060d-e12f-439f-829a-6717c069f133.jpg" class="mb-3"
+                                    alt="Medicine icon" />
+                            </div>
+                            <h6 class="card-title fw-semibold small mb-2">Medicine</h6>
+                            <a href="#" class="btn depart-btn btn-sm">Medicine</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+    </section>
+
 
     <!--- ---- notice section ---- -->
     <section class="notice">
@@ -360,27 +569,34 @@
             <div class="row g-4">
                 <!-- Left Section -->
                 <div class="col-lg-8">
-                    <div class="card shadow-sm ">
-                        <div class="card-header bg-primary text-white text-center">
+                    <div class="card shadow-sm border-1 h-100 ">
+                        <div class="card-header text-white text-center">
                             <h5 class="mb-0">Message from Founder</h5>
                         </div>
-                        <div class="card-body d-flex flex-column flex-md-row align-items-start">
-                            <img src="https://storage.googleapis.com/a1aa/image/53e949dd-381e-45c9-f069-1fbc32bea7ca.jpg"
-                                 alt="Founder"
-                                 class="img-thumbnail me-md-3 mb-3 mb-md-0" width="150" height="180">
+                        <div class="card-body">
+                            <div class="float-start">
+                                <img src="https://storage.googleapis.com/a1aa/image/53e949dd-381e-45c9-f069-1fbc32bea7ca.jpg" alt="Founder"
+                                    class="img-thumbnail me-3 mb-3" width="150" height="180">
+                                    <h6 class="mb-1" style="color: #474e8f; font-size: 18px;">sagor robi das</h6>
+                                    <p class="mb-2 small">Founder of <br> SCP Heart Hospital</p>
+                                    <p class="text-muted small"><i class="fab fa-wikipedia-w"></i> Wikipedia profile</p>
+                            </div>
                             <div>
-                                <h6 class="text-primary mb-1">sagor robi das</h6>
-                                <p class="mb-2 small">Founder of SCP Heart Hospital</p>
-                                <p class="text-muted small"><i class="fab fa-wikipedia-w"></i> Wikipedia profile</p>
-                                <p class="small text-justify">
-                                    (মেহতাবজান, আসামাল্য আলাহকুম / শুভেচ্ছা নিবেন। আমি, কার্ডিয়াক হাসপাতালের প্রতিষ্ঠাতা হিসেবে, অত‍্যন্ত গর্ব এবং কৃতজ্ঞতার সঙ্গে জানাতে চাই যে, আমাদের এই প্রতিষ্ঠানটি হৃদরোগে আক্রান্ত মানুষের জীবনে আলোর হিসেব কাজ করে যাচ্ছে। আমার স্বপ্ন ছিল একটি এমন হাসপাতাল...
-                                    (মেহতাবজান, আসামাল্য আলাহকুম / শুভেচ্ছা নিবেন। আমি, কার্ডিয়াক হাসপাতালের প্রতিষ্ঠাতা হিসেবে, অত‍্যন্ত গর্ব এবং কৃতজ্ঞতার সঙ্গে জানাতে চাই যে, আমাদের এই প্রতিষ্ঠানটি হৃদরোগে আক্রান্ত মানুষের জীবনে আলোর হিসেব কাজ করে যাচ্ছে। আমার স্বপ্ন ছিল একটি এমন হাসপাতাল...
-                                    (মেহতাবজান, আসামাল্য আলাহকুম / শুভেচ্ছা নিবেন। আমি, কার্ডিয়াক হাসপাতালের প্রতিষ্ঠাতা হিসেবে, অত‍্যন্ত গর্ব এবং কৃতজ্ঞতার সঙ্গে জানাতে চাই যে, আমাদের এই প্রতিষ্ঠানটি হৃদরোগে আক্রান্ত মানুষের জীবনে আলোর হিসেব কাজ করে যাচ্ছে। আমার স্বপ্ন ছিল একটি এমন হাসপাতাল...
-                                    (মেহতাবজান, আসামাল্য আলাহকুম / শুভেচ্ছা নিবেন। আমি, কার্ডিয়াক হাসপাতালের প্রতিষ্ঠাতা হিসেবে, অত‍্যন্ত গর্ব এবং কৃতজ্ঞতার সঙ্গে জানাতে চাই যে, আমাদের এই প্রতিষ্ঠানটি হৃদরোগে আক্রান্ত মানুষের জীবনে আলোর হিসেব কাজ করে যাচ্ছে। আমার স্বপ্ন ছিল একটি এমন হাসপাতাল...
-                                    (মেহতাবজান, আসামাল্য আলাহকুম / শুভেচ্ছা নিবেন। আমি, কার্ডিয়াক হাসপাতালের প্রতিষ্ঠাতা হিসেবে, অত‍্যন্ত গর্ব এবং কৃতজ্ঞতার সঙ্গে জানাতে চাই যে, আমাদের এই প্রতিষ্ঠানটি হৃদরোগে আক্রান্ত মানুষের জীবনে আলোর হিসেব কাজ করে যাচ্ছে। আমার স্বপ্ন ছিল একটি এমন হাসপাতাল...
-                                    (মেহতাবজান, আসামাল্য আলাহকুম / শুভেচ্ছা নিবেন। আমি, কার্ডিয়াক হাসপাতালের প্রতিষ্ঠাতা হিসেবে, অত‍্যন্ত গর্ব এবং কৃতজ্ঞতার সঙ্গে জানাতে চাই যে, আমাদের এই প্রতিষ্ঠানটি হৃদরোগে আক্রান্ত মানুষের জীবনে আলোর হিসেব কাজ করে যাচ্ছে। আমার স্বপ্ন ছিল একটি এমন হাসপাতাল...
+                                <p class="text-justify">
+                                    জীবের মধ্যে সবচেয়ে সম্পূর্ণতা মানুষের। কিন্তু সবচেয়ে অসম্পূর্ণ হয়ে সে জন্মগ্রহণ করে। বাঘ ভালুক তার জীবনযাত্রার পনেরো- আনা মূলধন নিয়ে আসে প্রকৃতির মালখানা থেকে। জীবরঙ্গভূমিতে মানুষ এসে দেখা দেয় দুই শূন্য হাতে মুঠো বেঁধে।
+   
+                                    মানুষ আসবার পূর্বেই জীবসৃষ্টিযজ্ঞে প্রকৃতির ভূরিব্যয়ের পালা শেষ হয়ে এসেছে। বিপুল মাংস, কঠিন বর্ম, প্রকাণ্ড লেজ নিয়ে জলে স্থলে পৃথুল দেহের যে                                 অমিতাচার প্রবল হয়ে উঠেছিল তাতে ধরিত্রীকে দিলে ক্লান্ত করে। প্রমাণ হল আতিশয্যের পরাভব অনিবার্য। পরীক্ষায় এটাও স্থির হয়ে গেল যে, প্রশ্রয়ের পরিমাণ                               যত বেশি হয় দুর্বলতার বোঝাও তত দুর্বহ হয়ে ওঠে। নূতন পর্বে প্রকৃতি যথাসম্ভব মানুষের বরাদ্দ কম করে দিয়ে নিজে রইল নেপথ্যে।
+                                                                    
+                                    মানুষকে দেখতে হল খুব ছোটো, কিন্তু সেটা একটা কৌশল মাত্র। এবারকার জীবযাত্রার পালায় বিপুলতাকে করা হল বহুলতায় পরিণত। মহাকায় জন্তু ছিল প্রকাণ্ড একলা,                                  মানুষ হল দূরপ্রসারিত অনেক। 
+                                     একলা জন্তুর পক্ষে বাঁচা ছিল কঠিন, কিন্তু অনেকের পক্ষে বাঁচা সহজ। একলা জন্তুর পক্ষে বাঁচা ছিল কঠিন, কিন্তু অনেকের পক্ষে বাঁচা সহজ। একলা জন্তুর পক্ষে                                 বাঁচা ছিল কঠিন, কিন্তু অনেকের পক্ষে বাঁচা সহজ। একলা জন্তুর পক্ষে বাঁচা ছিল কঠিন, কিন্তু অনেকের পক্ষে বাঁচা সহজ। একলা জন্তুর পক্ষে বাঁচা ছিল কঠিন,                                কিন্তু অনেকের পক্ষে বাঁচা সহজ। একলা জন্তুর পক্ষে বাঁচা ছিল কঠিন, কিন্তু অনেকের পক্ষে বাঁচা সহজ।
+                                                                    
+                                     জীবের মধ্যে সবচেয়ে সম্পূর্ণতা মানুষের। কিন্তু সবচেয়ে অসম্পূর্ণ হয়ে সে জন্মগ্রহণ করে। বাঘ ভালুক তার জীবনযাত্রার পনেরো- আনা মূলধন নিয়ে আসে                                    প্রকৃতির মালখানা থেকে। জীবরঙ্গভূমিতে মানুষ এসে দেখা দেয় দুই শূন্য হাতে মুঠো বেঁধে।
+                                                                    
+                                    মানুষ আসবার পূর্বেই জীবসৃষ্টিযজ্ঞে প্রকৃতির ভূরিব্যয়ের পালা শেষ হয়ে এসেছে। বিপুল মাংস, কঠিন বর্ম, প্রকাণ্ড লেজ নিয়ে জলে স্থলে পৃথুল দেহের যে                                 অমিতাচার প্রবল হয়ে উঠেছিল তাতে ধরিত্রীকে দিলে ক্লান্ত করে। প্রমাণ হল আতিশয্যের পরাভব অনিবার্য। পরীক্ষায় এটাও স্থির হয়ে গেল যে, প্রশ্রয়ের পরিমাণ                               যত বেশি হয় দুর্বলতার বোঝাও তত দুর্বহ হয়ে ওঠে। নূতন পর্বে প্রকৃতি যথাসম্ভব মানুষের বরাদ্দ কম করে দিয়ে নিজে রইল নেপথ্যে।
+                                                                    
+                                    মানুষকে দেখতে হল খুব ছোটো, কিন্তু সেটা একটা কৌশল মাত্র। এবারকার জীবযাত্রার পালায় বিপুলতাকে করা হল বহুলতায় পরিণত। মহাকায় জন্তু ছিল প্রকাণ্ড একলা,                                  মানুষ হল দূরপ্রসারিত অনেক। 
                                     <br><br>
-                                    <strong class="d-block text-end text-primary">sagor robi das<br>Founder<br>SCP Heart Hospital</strong>
+                                    <strong class="d-block fw-medium text-end " style="color: #474e8f; font-size: 16px;">sagor robi das<br>Founder<br>SCP Heart Hospital</strong>
                                 </p>
                             </div>
                         </div>
@@ -397,58 +613,66 @@
                             <div class="mb-2 border p-2 rounded">
                                 <div class="d-block d-md-flex justify-content-between align-items-center">
                                     <span class="truncate-text">হৃদরোগবিষয়ক যেকোনো জরুরি পরিস্থিতে...</span>
-                                    <button class="btn btn-sm btn-info">Read more</button>
+                                    <button class="btn btn-sm notice-button">Read more</button>
                                 </div>
                             </div>
                             <div class="mb-2 border p-2 rounded">
                                 <div class="d-block d-md-flex justify-content-between align-items-center">
                                     <span class="truncate-text">সকল ছাত্র-ছাত্রীদের জানানো যাচ্ছে যে...</span>
-                                    <button class="btn btn-sm btn-info">Read more</button>
+                                    <button class="btn btn-sm notice-button">Read more</button>
                                 </div>
                             </div>
                             <div class="mb-2 border p-2 rounded">
                                 <div class="d-block d-md-flex justify-content-between align-items-center">
                                     <span class="truncate-text">শিক্ষকের সম্মাননা নোটিশ...</span>
-                                    <button class="btn btn-sm btn-info">Read more</button>
+                                    <button class="btn btn-sm notice-button">Read more</button>
                                 </div>
                             </div>
                             <div class="mb-2 border p-2 rounded">
                                 <div class="d-block d-md-flex justify-content-between align-items-center">
                                     <span class="truncate-text">দাতা সংগঠন নোটিশ...</span>
-                                    <button class="btn btn-sm btn-info">Read more</button>
+                                    <button class="btn btn-sm notice-button">Read more</button>
                                 </div>
                             </div>
                             <div class="mb-2 border p-2 rounded">
                                 <div class="d-block d-md-flex justify-content-between align-items-center">
                                     <span class="truncate-text">ব্যাটারিমেন্ট দুর্ঘটনা নোটিশ...</span>
-                                    <button class="btn btn-sm btn-info">Read more</button>
+                                    <button class="btn btn-sm notice-button">Read more</button>
                                 </div>
                             </div>
                             <div class="mb-2 border p-2 rounded">
                                 <div class="d-block d-md-flex justify-content-between align-items-center">
                                     <span class="truncate-text">বিদ্যালয়ের পরীক্ষা সম্পর্কিত নোটিশ...</span>
-                                    <button class="btn btn-sm btn-info">Read more</button>
+                                    <button class="btn btn-sm notice-button">Read more</button>
                                 </div>
                             </div>
                             <div class="mb-2 border p-2 rounded">
                                 <div class="d-block d-md-flex justify-content-between align-items-center">
                                     <span class="truncate-text">পিরিয়ড পরিবর্তন নোটিশ...</span>
-                                    <button class="btn btn-sm btn-info">Read more</button>
+                                    <button class="btn btn-sm notice-button">Read more</button>
                                 </div>
                             </div>
                             <div class="mb-2 border p-2 rounded">
                                 <div class="d-block d-md-flex justify-content-between align-items-center">
                                     <span class="truncate-text">অনুপস্থিতি নোটিশ...</span>
-                                    <button class="btn btn-sm btn-info">Read more</button>
+                                    <button class="btn btn-sm notice-button">Read more</button>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer text-center">
-                            <button class="btn btn-outline-primary btn-sm mb-2 w-100">Read All Notice</button>
-                            <div class="d-flex align-items-center bg-info text-white rounded p-2">
-                                <img src="https://storage.googleapis.com/a1aa/image/48f8fd0b-d9c7-49f7-838f-f1431ff18b15.jpg" alt="News" width="50" height="50" class="me-2">
-                                <span class="fw-bold">বিভিন্ন সংবাদপত্রে প্রকাশিত সংবাদ</span>
-                            </div>
+                            <button 
+                            class="btn btn-outline btn-sm mb-2 w-100 pt-2" style="border: 1px solid #474e8f; color: #474e8f;"
+                            >
+                                Read All Notice
+                            </button>
+
+                            <a href="#" target="_blank" class="text-decoration-none">
+                                <div class="d-flex align-items-center bg-info text-white rounded p-2">
+                                    <img src="https://storage.googleapis.com/a1aa/image/48f8fd0b-d9c7-49f7-838f-f1431ff18b15.jpg" alt="News" width="50" height="50" class="me-2">
+                                    <span class="fw-bold">বিভিন্ন সংবাদপত্রে প্রকাশিত সংবাদ</span>
+                                </div>
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -459,11 +683,10 @@
     <!-- ---- tabs section ---- -->
     <section class="tabs">
         <div class="container py-4">
-
             <!-- Tabs nav -->
-            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+            <ul class="nav nav-tabs justify-content-center min-tab mb-4" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="doctor-tab" data-bs-toggle="tab" data-bs-target="#doctor" type="button" role="tab">Doctor</button>
+                    <button class="nav-link active " id="doctor-tab" data-bs-toggle="tab" data-bs-target="#doctor" type="button" role="tab">Doctor</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="procedures-tab" data-bs-toggle="tab" data-bs-target="#procedures" type="button" role="tab">Procedures</button>
@@ -481,7 +704,7 @@
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <div class="ratio ratio-16x9">
+                                <div class="">
                                     <img src="https://storage.googleapis.com/a1aa/image/ca172e6c-8695-43b4-de42-7b048e6ff137.jpg"
                                          class="card-img-top" alt="Doctor 1">
                                 </div>
@@ -490,13 +713,13 @@
                                     <p class="card-text"><strong>Specialty:</strong> Interventional Cardiology</p>
                                     <p class="card-text"><strong>Rating:</strong> 4</p>
                                     <p class="card-text"><strong>Contact:</strong> 01767089111</p>
-                                    <a href="#" class="btn btn-primary w-100 mt-2">Make A Appointment</a>
+                                    <a href="#" class="btn button-bg w-100 mt-2">Make A Appointment</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <div class="ratio ratio-16x9">
+                                <div class="">
                                     <img src="https://storage.googleapis.com/a1aa/image/980ad809-2962-4bba-0f84-28d6f34c2f46.jpg"
                                          class="card-img-top" alt="Doctor 2">
                                 </div>
@@ -505,13 +728,13 @@
                                     <p class="card-text"><strong>Specialty:</strong> Cardiac Surgery</p>
                                     <p class="card-text"><strong>Rating:</strong> 4</p>
                                     <p class="card-text"><strong>Contact:</strong> 01767089111</p>
-                                    <a href="#" class="btn btn-primary w-100 mt-2">Make A Appointment</a>
+                                    <a href="#" class="btn button-bg w-100 mt-2">Make A Appointment</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <div class="ratio ratio-16x9">
+                                <div class="">
                                     <img src="https://storage.googleapis.com/a1aa/image/980ad809-2962-4bba-0f84-28d6f34c2f46.jpg"
                                          class="card-img-top" alt="Doctor 2">
                                 </div>
@@ -520,13 +743,13 @@
                                     <p class="card-text"><strong>Specialty:</strong> Cardiac Surgery</p>
                                     <p class="card-text"><strong>Rating:</strong> 4</p>
                                     <p class="card-text"><strong>Contact:</strong> 01767089111</p>
-                                    <a href="#" class="btn btn-primary w-100 mt-2">Make A Appointment</a>
+                                    <a href="#" class="btn button-bg w-100 mt-2">Make A Appointment</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <div class="ratio ratio-16x9">
+                                <div class="">
                                     <img src="https://storage.googleapis.com/a1aa/image/980ad809-2962-4bba-0f84-28d6f34c2f46.jpg"
                                          class="card-img-top" alt="Doctor 2">
                                 </div>
@@ -535,7 +758,7 @@
                                     <p class="card-text"><strong>Specialty:</strong> Cardiac Surgery</p>
                                     <p class="card-text"><strong>Rating:</strong> 4</p>
                                     <p class="card-text"><strong>Contact:</strong> 01767089111</p>
-                                    <a href="#" class="btn btn-primary w-100 mt-2">Make A Appointment</a>
+                                    <a href="#" class="btn button-bg w-100 mt-2">Make A Appointment</a>
                                 </div>
                             </div>
                         </div>
@@ -547,7 +770,7 @@
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <div class="ratio ratio-16x9">
+                                <div class="">
                                     <img src="https://storage.googleapis.com/a1aa/image/ca172e6c-8695-43b4-de42-7b048e6ff137.jpg"
                                          class="card-img-top" alt="Doctor 1">
                                 </div>
@@ -556,13 +779,13 @@
                                     <p class="card-text"><strong>Specialty:</strong> Interventional Cardiology</p>
                                     <p class="card-text"><strong>Rating:</strong> 4</p>
                                     <p class="card-text"><strong>Contact:</strong> 01767089111</p>
-                                    <a href="#" class="btn btn-primary w-100 mt-2">Make A Appointment</a>
+                                    <a href="#" class="btn button-bg w-100 mt-2">Make A Appointment</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <div class="ratio ratio-16x9">
+                                <div class="">
                                     <img src="https://storage.googleapis.com/a1aa/image/980ad809-2962-4bba-0f84-28d6f34c2f46.jpg"
                                          class="card-img-top" alt="Doctor 2">
                                 </div>
@@ -571,13 +794,13 @@
                                     <p class="card-text"><strong>Specialty:</strong> Cardiac Surgery</p>
                                     <p class="card-text"><strong>Rating:</strong> 4</p>
                                     <p class="card-text"><strong>Contact:</strong> 01767089111</p>
-                                    <a href="#" class="btn btn-primary w-100 mt-2">Make A Appointment</a>
+                                    <a href="#" class="btn button-bg w-100 mt-2">Make A Appointment</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <div class="ratio ratio-16x9">
+                                <div class="">
                                     <img src="https://storage.googleapis.com/a1aa/image/980ad809-2962-4bba-0f84-28d6f34c2f46.jpg"
                                          class="card-img-top" alt="Doctor 2">
                                 </div>
@@ -586,7 +809,7 @@
                                     <p class="card-text"><strong>Specialty:</strong> Cardiac Surgery</p>
                                     <p class="card-text"><strong>Rating:</strong> 4</p>
                                     <p class="card-text"><strong>Contact:</strong> 01767089111</p>
-                                    <a href="#" class="btn btn-primary w-100 mt-2">Make A Appointment</a>
+                                    <a href="#" class="btn button-bg w-100 mt-2">Make A Appointment</a>
                                 </div>
                             </div>
                         </div>
@@ -598,7 +821,7 @@
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <div class="ratio ratio-16x9">
+                                <div class="">
                                     <img src="https://storage.googleapis.com/a1aa/image/ca172e6c-8695-43b4-de42-7b048e6ff137.jpg"
                                          class="card-img-top" alt="Doctor 1">
                                 </div>
@@ -607,13 +830,13 @@
                                     <p class="card-text"><strong>Specialty:</strong> Interventional Cardiology</p>
                                     <p class="card-text"><strong>Rating:</strong> 4</p>
                                     <p class="card-text"><strong>Contact:</strong> 01767089111</p>
-                                    <a href="#" class="btn btn-primary w-100 mt-2">Make A Appointment</a>
+                                    <a href="#" class="btn button-bg w-100 mt-2">Make A Appointment</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="card h-100">
-                                <div class="ratio ratio-16x9">
+                                <div class="">
                                     <img src="https://storage.googleapis.com/a1aa/image/980ad809-2962-4bba-0f84-28d6f34c2f46.jpg"
                                          class="card-img-top" alt="Doctor 2">
                                 </div>
@@ -622,7 +845,7 @@
                                     <p class="card-text"><strong>Specialty:</strong> Cardiac Surgery</p>
                                     <p class="card-text"><strong>Rating:</strong> 4</p>
                                     <p class="card-text"><strong>Contact:</strong> 01767089111</p>
-                                    <a href="#" class="btn btn-primary w-100 mt-2">Make A Appointment</a>
+                                    <a href="#" class="btn button-bg w-100 mt-2">Make A Appointment</a>
                                 </div>
                             </div>
                         </div>
@@ -637,8 +860,11 @@
     <!-- ---- blog section ---- -->
     <section class="blog">
         <div class="container py-4">
+
             <div>
-                <h2 class="text-center mb-5">Read Blog Post</h2>
+                <h3 class="text-center fw-semibold my-5">
+                    Read Blog Post
+                </h3>
             </div>
             <div class="row g-4">
                 <!-- Blog Card -->
@@ -650,7 +876,7 @@
                         </div>
                         <div class="card-body d-flex flex-column">
                             <p class="card-text mb-3 flex-grow-1">সাম্প্রতিক কয়েকটি ঘটনার ধরন</p>
-                            <a href="#" class="btn btn-primary btn-sm w-100 mt-auto">Read More</a>
+                            <a href="#" class="btn button-bg btn-sm w-100 mt-auto">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -658,66 +884,66 @@
                 <!-- Blog Card -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="ratio ratio-16x9">
+                        <div class="">
                             <img src="https://storage.googleapis.com/a1aa/image/b0639226-10b6-4596-d51d-485418bc9550.jpg"
                                  class="card-img-top" alt="Old houses">
                         </div>
                         <div class="card-body d-flex flex-column">
                             <p class="card-text  mb-3 flex-grow-1">ওয়াকফ আইনের প্রতিবাদ কেন সাম্প্রদায়িক সহিংসতায় রূপ নিল
                                 মুসিদাবাদে</p>
-                            <a href="#" class="btn btn-primary btn-sm w-100 mt-auto">Read More</a>
+                            <a href="#" class="btn button-bg btn-sm w-100 mt-auto">Read More</a>
                         </div>
                     </div>
                 </div>
                 <!-- Blog Card -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="ratio ratio-16x9">
+                        <div class="">
                             <img src="https://storage.googleapis.com/a1aa/image/96ef01c8-76d2-43eb-b472-db987e468c80.jpg"
                                  class="card-img-top" alt="Hospital operation">
                         </div>
                         <div class="card-body d-flex flex-column">
                             <p class="card-text mb-3 flex-grow-1">প্রেস্ক্রিপ্ট তৈরিই হচ্ছিল?</p>
-                            <a href="#" class="btn btn-primary btn-sm w-100 mt-auto">Read More</a>
+                            <a href="#" class="btn button-bg btn-sm w-100 mt-auto">Read More</a>
                         </div>
                     </div>
                 </div>
                 <!-- Blog Card -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="ratio ratio-16x9">
+                        <div class="">
                             <img src="https://storage.googleapis.com/a1aa/image/6c89a96c-9b01-4115-9895-2d79035c94da.jpg"
                                  class="card-img-top" alt="Cartoon crowd">
                         </div>
                         <div class="card-body d-flex flex-column">
                             <p class="card-text mb-3 flex-grow-1">গণপিটুনির প্রবণতা আবার বেড়েছে, নিয়ন্ত্রণে আনা যাচ্ছে না কেন</p>
-                            <a href="#" class="btn btn-primary btn-sm w-100 mt-auto">Read More</a>
+                            <a href="#" class="btn button-bg btn-sm w-100 mt-auto">Read More</a>
                         </div>
                     </div>
                 </div>
                 <!-- Blog Card -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="ratio ratio-16x9">
+                        <div class="">
                             <img src="https://storage.googleapis.com/a1aa/image/d65228f6-0adf-43de-d647-cd0a5d19eb07.jpg"
                                  class="card-img-top" alt="Person being held down" style="object-fit: cover;">
                         </div>
                         <div class="card-body d-flex flex-column">
                             <p class="card-text mb-3 flex-grow-1">সাম্প্রতিক কয়েকটি ঘটনার ধরন</p>
-                            <a href="#" class="btn btn-primary btn-sm w-100 mt-auto">Read More</a>
+                            <a href="#" class="btn button-bg btn-sm w-100 mt-auto">Read More</a>
                         </div>
                     </div>
                 </div>
                 <!-- Blog Card -->
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="ratio ratio-16x9">
+                        <div class="">
                             <img src="https://storage.googleapis.com/a1aa/image/5de354b0-8609-499e-37a7-e9d19c4375c4.jpg"
                                  class="card-img-top" alt="Hospital building">
                         </div>
                         <div class="card-body d-flex flex-column">
                             <p class="card-text mb-3 flex-grow-1">সিসিইউ ইউনিট সংক্রান্ত ঘোষণা</p>
-                            <a href="#" class="btn btn-primary btn-sm w-100 mt-auto">Read More</a>
+                            <a href="#" class="btn button-bg btn-sm w-100 mt-auto">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -729,10 +955,13 @@
     <section class="service2">
         <div class="container py-5">
             <div class="text-center pb-3">
-                <h1 class="h2 m-0">Our Services</h1>
-                <p class="text-muted">
+                <h3 class="text-center fw-semibold py-2">
+                    Our Services
+                </h3>
+                <p class="text-center text-secondary small mt-2 mb-4 mx-auto" style="max-width: 900px;">
                     “Bringing healthcare of International standards within the reach of every individual.”
                 </p>
+
             </div>
             <div class="row g-4">
                 <!-- Large Card -->
@@ -740,7 +969,7 @@
                     <div class="card h-100 shadow-sm position-relative overflow-hidden">
                         <img src="https://storage.googleapis.com/a1aa/image/d2ab5d1d-9362-46e7-21a1-6fd873219fbb.jpg"
                              class="card-img-top" alt="Physiotherapy">
-                        <span class="badge bg-danger position-absolute bottom-0 start-0 m-3">More Details Physiotherapy</span>
+                        <span class="badge base position-absolute bottom-0 start-0 m-3">More Details Physiotherapy</span>
                     </div>
                 </div>
 
@@ -751,28 +980,28 @@
                             <div class="card h-100 shadow-sm position-relative overflow-hidden">
                                 <img src="https://storage.googleapis.com/a1aa/image/9684ac33-a3f3-4424-7d44-1583fd840c61.jpg"
                                      class="card-img-top" alt="Canteen">
-                                <span class="badge bg-danger position-absolute bottom-0 start-0 m-2">Canteen</span>
+                                <span class="badge base position-absolute bottom-0 start-0 m-2">Canteen</span>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="card h-100 shadow-sm position-relative overflow-hidden">
                                 <img src="https://storage.googleapis.com/a1aa/image/82a947d4-9755-4f47-201e-3645cfdb112b.jpg"
                                      class="card-img-top" alt="Autism Center">
-                                <span class="badge bg-danger position-absolute bottom-0 start-0 m-2">Autism & Child Development Center</span>
+                                <span class="badge base position-absolute bottom-0 start-0 m-2">Autism & Child Development Center</span>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="card h-100 shadow-sm position-relative overflow-hidden">
                                 <img src="https://storage.googleapis.com/a1aa/image/627f0736-969d-45ec-4d9a-b6a998f54412.jpg"
                                      class="card-img-top" alt="Ambulance">
-                                <span class="badge bg-danger position-absolute bottom-0 start-0 m-2">Ambulance Service</span>
+                                <span class="badge base position-absolute bottom-0 start-0 m-2">Ambulance Service</span>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="card h-100 shadow-sm position-relative overflow-hidden">
                                 <img src="https://storage.googleapis.com/a1aa/image/dc84976b-183a-42db-cae0-0e43e15972ea.jpg"
                                      class="card-img-top" alt="Pharmacy">
-                                <span class="badge bg-danger position-absolute bottom-0 start-0 m-2">Pharmacy</span>
+                                <span class="badge base position-absolute bottom-0 start-0 m-2">Pharmacy</span>
                             </div>
                         </div>
                     </div>
@@ -783,15 +1012,17 @@
 
     <!-- ---- contact section ---- -->
     <section class="contact ">
-        <div class="container py-5">
-            <div class="row pt-5">
-                <div class="col-md-6 mb-4 mb-md-0">
+        <div class="container py-4 lg:py-5">
+            <div class="row ">
+                <div class="col-md-12 col-xl-6 ">
                     <img src="./asset/images/contact.png"
                          alt="Hands"
                          class="img-fluid rounded h-100">
                 </div>
-                <div class="col-md-6">
-                    <h2 class="text-center fw-semibold text-dark mb-4">Contact Us</h2>
+                <div class="col-md-12 col-xl-6">
+                    <h3 class="text-center fw-semibold py-2 mb-4">
+                        Contact Us
+                    </h3>
                     <form>
                         <div class="row mb-3">
                             <div class="col">
@@ -811,7 +1042,7 @@
                             <label for="message" class="form-label small">Message</label>
                             <textarea class="form-control form-control-sm" id="message" rows="4" placeholder="Type your message here..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100 btn-sm">Send Message</button>
+                        <button type="submit" class="btn button-bg w-100 btn-sm">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -821,46 +1052,48 @@
     <!-- ---- Gallery section ---- -->
     <section class="gallery ">
         <div class="container py-5">
-            <h3 class="text-center mb-4">VISIT OUR GALLERY</h3>
-            <div class="row g-2">
+            <h3 class="text-center fw-semibold my-4">
+                VISIT OUR GALLERY
+            </h3>
+            <div class="row g-3 xl:g-4">
                 <div class="col-6 col-md-3">
-                    <div class="ratio ratio-1x1">
-                        <img src="./asset/images/gallery1.jpeg" class="img-fluid gallery-img object-fit-cover" data-bs-toggle="modal"
+                    <div class="card">
+                        <img src="./asset/images/gallery1.jpeg" class="img-fluid gallery-img object-fit-contain" data-bs-toggle="modal"
                              data-bs-target="#imageModal"
                              data-bs-image="./asset/images/gallery1.jpeg"
                              alt="image_preview">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="ratio ratio-1x1">
-                        <img src="./asset/images/gallery2.jpeg" class="img-fluid gallery-img object-fit-cover" data-bs-toggle="modal"
+                    <div class="card ">
+                        <img src="./asset/images/gallery2.jpeg" class="img-fluid gallery-img object-fit-contain" data-bs-toggle="modal"
                              data-bs-target="#imageModal"
                              data-bs-image="./asset/images/gallery2.jpeg"
                              alt="image_preview"
                         >
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="ratio ratio-1x1">
-                        <img src="./asset/images/gallery3.jpeg" class="img-fluid gallery-img object-fit-cover" data-bs-toggle="modal"
+                <div class="col-6 col-md-3 ">
+                    <div class="card">
+                        <img src="./asset/images/gallery3.jpeg" class="img-fluid gallery-img object-fit-contain" data-bs-toggle="modal"
                              data-bs-target="#imageModal"
                              data-bs-image="./asset/images/gallery3.jpeg"
                              alt="image_preview"
                         >
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="ratio ratio-1x1">
-                        <img src="./asset/images/gallery4.jpeg" class="img-fluid gallery-img object-fit-cover" data-bs-toggle="modal"
+                <div class="col-6 col-md-3 ">
+                    <div class="card ">
+                        <img src="./asset/images/gallery4.jpeg" class="img-fluid gallery-img object-fit-contain" data-bs-toggle="modal"
                              data-bs-target="#imageModal"
                              data-bs-image="./asset/images/gallery4.jpeg"
                              alt="image_preview"
                         >
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="ratio ratio-1x1">
-                        <img src="./asset/images/gallery5.jpeg" class="img-fluid gallery-img object-fit-cover"
+                <div class="col-6 col-md-3 ">
+                    <div class="card ">
+                        <img src="./asset/images/gallery5.jpeg" class="img-fluid gallery-img object-fit-contain"
                              data-bs-toggle="modal"
                              data-bs-target="#imageModal"
                              data-bs-image="./asset/images/gallery5.jpeg"
@@ -868,9 +1101,9 @@
                         >
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="ratio ratio-1x1">
-                        <img src="./asset/images/gallery6.jpeg" class="img-fluid gallery-img object-fit-cover"
+                <div class="col-6 col-md-3 ">
+                    <div class="card">
+                        <img src="./asset/images/gallery6.jpeg" class="img-fluid gallery-img object-fit-contain"
                              data-bs-toggle="modal"
                              data-bs-target="#imageModal"
                              data-bs-image="./asset/images/gallery6.jpeg"
@@ -879,8 +1112,8 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="ratio ratio-1x1">
-                        <img src="./asset/images/gallery7.jpeg" class="img-fluid gallery-img object-fit-cover"
+                    <div class="card ">
+                        <img src="./asset/images/gallery7.jpeg" class="img-fluid gallery-img object-fit-contain"
                              data-bs-toggle="modal"
                              data-bs-target="#imageModal"
                              data-bs-image="./asset/images/gallery7.jpeg"
@@ -889,8 +1122,8 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="ratio ratio-1x1">
-                        <img src="./asset/images/gallery8.jpeg" class="img-fluid gallery-img object-fit-cover"
+                    <div class="card ">
+                        <img src="./asset/images/gallery8.jpeg" class="img-fluid gallery-img object-fit-contain"
                              data-bs-toggle="modal"
                              data-bs-target="#imageModal"
                              data-bs-image="./asset/images/gallery8.jpeg"
@@ -906,9 +1139,9 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-body p-0 position-relative">
-                        <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class="ratio ratio-4x3">
-                            <img src="" id="modalImage" class="w-100 h-100 object-fit-cover" alt="Image">
+                        <button type="button" class="btn-close position-absolute top-0 end-0 m-2 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="card">
+                            <img src="" id="modalImage" class="w-100 h-100 object-fit-contain" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -918,7 +1151,7 @@
 
     <!--- ---- location section ---- -->
     <section class="location">
-        <div class="container py-5">
+        <div class="container pt-0 pb-4  xl:py-5">
             <div class="row gy-4">
                 <!-- Google Map Section -->
                 <div class="col-md-6 col-lg-8">
@@ -971,8 +1204,8 @@
 
 </main>
 
-<footer class="footer py-5">
-    <div class="container">
+<footer class="footer">
+    <div class="container py-5">
         <div class="row gy-4 justify-content-center">
             <div class="col-12 col-md-6 col-lg-2 text-center">
                 <img src="asset/logo/footer_logo.png" alt="Footer Logo"
@@ -1016,6 +1249,20 @@
                     <li><a class="nav-link" href="#">Events</a></li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <div class="footer_cpy">
+        <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between">
+            <p class="mb-2 mb-sm-0">© Copyright 2025. Al-Manar Hospital. All Rights Reserved.</p>
+            <div class="d-flex gap-3 copy_right_socile">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <a href="#" class="small">Contact</a>
         </div>
     </div>
 </footer>
